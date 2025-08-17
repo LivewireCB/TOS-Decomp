@@ -13,67 +13,67 @@ Sections:
 	.sdata2     type:rodata align:32
 	.sbss2      type:bss align:32
 
-SB/LinkFastSqrt.cpp:
+SB/GM/Engine/Core/LinkFastSqrt.cpp:
 	.text       start:0x80006760 end:0x800067D0
 	.rodata     start:0x8067D280 end:0x8067D2A0
 
-SB/WadSet1/WAD00.cpp:
+SB/GM/Engine/WAD00.cpp:
 	.text       start:0x800067D0 end:0x80051F80
 	.ctors      start:0x8067CE44 end:0x8067CE48
 	.rodata     start:0x8067D2A0 end:0x8067F4A4
 	.data       start:0x806AFDE0 end:0x806B4E98
 	.bss        start:0x80719900 end:0x80719968
 
-SB/WadSet1/WAD01.cpp:
+SB/GM/Engine/WAD01.cpp:
 	.text       start:0x80051F80 end:0x800AF0A0
 	.ctors      start:0x8067CE48 end:0x8067CE4C
 	.rodata     start:0x80689398 end:0x8068B9C0
 	.data       start:0x806B4E98 end:0x806BD4A0
 	.bss        start:0x8072EC80 end:0x807340F0
 
-SB/WadSet1/WAD02.cpp:
+SB/GM/Engine/WAD02.cpp:
 	.text       start:0x800AF0A0 end:0x80103F90
 	.ctors      start:0x8067CE4C end:0x8067CE50
 	.rodata     start:0x8068B9C0 end:0x8068D298
 	.data       start:0x806BD4A0 end:0x806C1B28
 	.bss        start:0x807340F0 end:0x80753F80
 
-SB/WadSet1/WAD03.cpp:
+SB/GM/Engine/WAD03.cpp:
 	.text       start:0x80103F90 end:0x80189AF0
 	.ctors      start:0x8067CE50 end:0x8067CE54
 	.rodata     start:0x8068D298 end:0x80691550
 	.data       start:0x806C1B28 end:0x806C6FB0
 	.bss        start:0x80753F80 end:0x8075B260
 
-SB/WadSet1/WAD04.cpp:
+SB/GM/Engine/WAD04.cpp:
 	.text       start:0x80189AF0 end:0x801ABAA0
 	.ctors      start:0x8067CE54 end:0x8067CE58
 	.rodata     start:0x80691550 end:0x80692A98
 	.data       start:0x806C6FB0 end:0x806C93D0
 	.bss        start:0x8075B260 end:0x807741C0
 
-SB/WadSet1/WADSpeed.cpp:
+SB/GM/Engine/WADSpeed.cpp:
 	.text       start:0x801ABAA0 end:0x801AC2B0
 	.ctors      start:0x8067CE58 end:0x8067CE5C
 	.rodata     start:0x80692A98 end:0x80692AA8
 	.data       start:0x806C93D0 end:0x806C93E0
 	.bss        start:0x807741C0 end:0x80774228
 
-SB/WadSet2/WAD00.cpp:
+SB/NG/Engine/WAD00.cpp:
 	.text       start:0x801AC2B0 end:0x801C2460
 	.ctors      start:0x8067CE5C end:0x8067CE60
 	.rodata     start:0x80692AA8 end:0x80692C08
 	.data       start:0x806C93E0 end:0x806CB0A0
 	.bss        start:0x80774228 end:0x80774A60
 
-SB/WadSet2/WAD01.cpp:
+SB/NG/Engine/WAD01.cpp:
 	.text       start:0x801C2460 end:0x801E4270
 	.ctors      start:0x8067CE60 end:0x8067CE64
 	.rodata     start:0x80692C08 end:0x80693C08
 	.data       start:0x806CB0A0 end:0x806CE7A8
 	.bss        start:0x80774A60 end:0x80779F70
 
-SB/WadSet2/WAD02.cpp:
+SB/NG/Engine/WAD02.cpp:
 	.text       start:0x801E4270 end:0x8020B5A0
 	.ctors      start:0x8067CE64 end:0x8067CE68
 	.rodata     start:0x80693C08 end:0x80695AD0
@@ -82,7 +82,7 @@ SB/WadSet2/WAD02.cpp:
 	.sdata      start:0x80819920 end:0x80819958
 	.sbss       start:0x8081BBC0 end:0x8081BBD8
 
-SB/WadSet2/WADSpeed.cpp:
+SB/NG/Engine/WADSpeed.cpp:
 	.text       start:0x8020B5A0 end:0x8021A3B0
 	.ctors      start:0x8067CE68 end:0x8067CE6C
 	.rodata     start:0x80695AD0 end:0x80695BC0
