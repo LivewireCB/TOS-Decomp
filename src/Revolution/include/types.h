@@ -1,49 +1,40 @@
 #ifndef TYPES_H
 #define TYPES_H
 
-#include <stddef.h>
-#include <stdint.h>
+#ifdef __cplusplus
+#include <MSL_C/include/cstdarg>
+#include <MSL_C/include/cstddef>
+#include <MSL_C/include/new>
+#else
+#include <MSL_C/include/stdarg.h>
+#include <MSL_C/include/stddef.h>
+#endif
 
-// NULL
+#include <decomp.h>
+#include <lang.h>
+#include <macros.h>
 
-#define nullptr			NULL
+typedef unsigned long long u64;
+typedef signed long long s64;
 
-// Fixed-width types
+typedef unsigned long u32;
+typedef signed long s32;
 
-typedef uint8_t			u8;
-typedef uint16_t		u16;
-typedef uint32_t		u32;
-typedef uint64_t		u64;
+typedef unsigned short u16;
+typedef signed short s16;
 
-typedef  int8_t			s8;
-typedef  int16_t		s16;
-typedef  int32_t		s32;
-typedef  int64_t		s64;
+typedef unsigned char u8;
+typedef signed char s8;
 
-// Floating-point types
+typedef float f32;
+typedef double f64;
 
-typedef float			f32;
-typedef double			f64;
+typedef int UNKWORD;
+typedef void UNKTYPE;
 
-// Booleans
+enum { FALSE, TRUE };
+typedef int BOOL;
 
-typedef int				BOOL;
-#define true			1
-#define false			0
+typedef void (*funcptr_t)(void);
 
-#define TRUE			true
-#define FALSE			false
-
-// Byte types
-
-typedef unsigned long int	byte4_t;
-typedef unsigned short int	byte2_t;
-typedef unsigned char		byte1_t;
-
-typedef byte1_t				byte_t;
-
-// Other types
-
-typedef unsigned long int	register_t;
-
-#endif // TYPES_H
+#endif

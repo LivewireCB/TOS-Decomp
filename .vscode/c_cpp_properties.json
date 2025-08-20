@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/include/bink",
+                "${workspaceFolder}/src/PowerPC_EABI_Support/include",
+                "${workspaceFolder}/src/PowerPC_EABI_Support/include/PowerPC_EABI_Support/MSL_C/MSL_Common",
+                "${workspaceFolder}/src/PowerPC_EABI_Support/include/PowerPC_EABI_Support/MSL_C++",
+                "${workspaceFolder}/include/inline",
+                "${workspaceFolder}/src/revolution/include",
+                "${workspaceFolder}/src/revolution/src",
+                "${workspaceFolder}/src/hbm/src",
+                "${workspaceFolder}/src/hbm/include",
+                "${workspaceFolder}/include/rwsdk",
+                "${workspaceFolder}/src/"
+            ],
+            "defines": [
+                "__MWERKS__",
+                "GAMECUBE"
+            ],
+            "compilerPath": "",
+            "cStandard": "c99",
+            "cppStandard": "c++98",
+            "intelliSenseMode": "linux-clang-x64",
+            "configurationProvider": "ms-vscode.makefile-tools",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/include"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            }
+        }
+    ],
+    "version": 4
+}
