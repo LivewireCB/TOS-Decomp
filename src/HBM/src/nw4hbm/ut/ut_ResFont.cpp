@@ -1,6 +1,6 @@
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 namespace {
 
@@ -121,4 +121,4 @@ FontInformation *ResFont::Rebuild(BinaryFileHeader *pHeader) {
 }
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm

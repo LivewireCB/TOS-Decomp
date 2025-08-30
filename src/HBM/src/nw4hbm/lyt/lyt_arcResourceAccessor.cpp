@@ -87,7 +87,7 @@ void *GetResourceSub(ARCHandle *pHandle, const char *pRootDir, u32 type,
 
 } // namespace
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 /******************************************************************************
@@ -141,4 +141,4 @@ ut::Font *ArcResourceAccessor::GetFont(const char *pName) {
 }
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm

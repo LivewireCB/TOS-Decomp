@@ -2,7 +2,7 @@
 #define NW4R_UT_NON_COPYABLE_H
 #include <types_nw4r.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 namespace {
 
@@ -15,6 +15,6 @@ protected:
 
 } // namespace
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

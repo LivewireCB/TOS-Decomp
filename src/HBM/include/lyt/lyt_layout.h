@@ -9,7 +9,7 @@
 
 #include <revolution/MEM.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 // Forward declarations
@@ -167,6 +167,6 @@ TObj *CreateObject(TParam1 param1, TParam2 param2) {
 
 } // namespace
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

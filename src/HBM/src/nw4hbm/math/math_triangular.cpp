@@ -3,7 +3,7 @@
 #include <math/math_arithmetic.h>
 #include <types_nw4r.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace math {
 namespace {
 
@@ -476,4 +476,4 @@ ArcTanSample sArcTanTbl[] = {
 
 } // namespace
 } // namespace math
-} // namespace nw4r
+} // namespace nw4hbm

@@ -10,7 +10,7 @@
 #include <MSL_C/include/cstdio>
 #include <MSL_C/include/cwchar>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 template <typename T> class TextWriterBase : public CharWriter {
@@ -136,6 +136,6 @@ inline int TextWriterBase<wchar_t>::VSNPrintf(wchar_t *pBuffer, u32 count,
 }
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

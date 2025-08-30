@@ -1,6 +1,6 @@
 #include <lyt.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 NW4R_UT_RTTI_DEF_DERIVED(Bounding, Pane);
@@ -20,4 +20,4 @@ void Bounding::DrawSelf(const DrawInfo &rInfo) {
 }
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm

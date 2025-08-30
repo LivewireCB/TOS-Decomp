@@ -4,7 +4,7 @@
 
 #include <lyt/lyt_types.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 namespace res {
 
@@ -132,6 +132,6 @@ struct MaterialResourceNum {
 };
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

@@ -4,7 +4,7 @@
 
 #include <ut/ut_NonCopyable.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 // Forward declarations
@@ -355,7 +355,7 @@ public:
 };
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 /******************************************************************************
  *
@@ -366,7 +366,7 @@ public:
  * Declare typedef for linked-list specialization.
  */
 #define NW4R_UT_LINKLIST_TYPEDEF_DECL(T)                                       \
-  typedef nw4r::ut::LinkList<T, offsetof(T, node)> T##List;
+  typedef nw4hbm::ut::LinkList<T, offsetof(T, node)> T##List;
 
 /**
  * Declare typedef for linked-list specialization.
@@ -374,12 +374,12 @@ public:
  * Use the specified link node (name suffix) for classes with multiple nodes.
  */
 #define NW4R_UT_LINKLIST_TYPEDEF_DECL_EX(T, SUFFIX)                            \
-  typedef nw4r::ut::LinkList<T, offsetof(T, node##SUFFIX)> T##SUFFIX##List;
+  typedef nw4hbm::ut::LinkList<T, offsetof(T, node##SUFFIX)> T##SUFFIX##List;
 
 /**
  * Declare a member LinkListNode for use with the typedef.
  */
-#define NW4R_UT_LINKLIST_NODE_DECL() nw4r::ut::LinkListNode node
+#define NW4R_UT_LINKLIST_NODE_DECL() nw4hbm::ut::LinkListNode node
 
 /**
  * Declare a member LinkListNode for use with the typedef.
@@ -387,7 +387,7 @@ public:
  * Use the specified link node (name suffix) for classes with multiple nodes.
  */
 #define NW4R_UT_LINKLIST_NODE_DECL_EX(SUFFIX)                                  \
-  nw4r::ut::LinkListNode node##SUFFIX
+  nw4hbm::ut::LinkListNode node##SUFFIX
 
 /**
  * Explicitly instantiate a linked list specialization.
@@ -395,7 +395,7 @@ public:
  */
 #ifndef __DECOMP_NON_MATCHING
 #define NW4R_UT_LINKLIST_TYPEDEF_FORCE(T)                                      \
-  template struct nw4r::ut::LinkList<T, offsetof(T, node)>
+  template struct nw4hbm::ut::LinkList<T, offsetof(T, node)>
 #else
 #define NW4R_UT_LINKLIST_TYPEDEF_FORCE(T)
 #endif

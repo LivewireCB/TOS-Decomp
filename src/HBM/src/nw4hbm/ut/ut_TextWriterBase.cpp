@@ -1,6 +1,6 @@
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 template <typename T> T *TextWriterBase<T>::mFormatBuffer = NULL;
@@ -412,4 +412,4 @@ template struct TextWriterBase<char>;
 template struct TextWriterBase<wchar_t>;
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm

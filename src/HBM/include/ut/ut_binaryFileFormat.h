@@ -2,7 +2,7 @@
 #define NW4R_UT_BINARY_FILE_FORMAT_H
 #include <types_nw4r.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 struct BinaryBlockHeader {
@@ -23,6 +23,6 @@ bool IsValidBinaryFile(const BinaryFileHeader *pHeader, u32 signature,
                        u16 version, u16 minBlocks);
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

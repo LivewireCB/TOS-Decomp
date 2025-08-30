@@ -6,7 +6,7 @@
 
 #include <revolution/GX.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 enum FontEncoding {
@@ -83,6 +83,6 @@ private:
 };
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

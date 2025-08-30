@@ -1,6 +1,6 @@
 #include <lyt.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 ResourceAccessor::~ResourceAccessor() {}
@@ -14,4 +14,4 @@ ut::Font *ResourceAccessor::GetFont(const char *pName) {
 }
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm

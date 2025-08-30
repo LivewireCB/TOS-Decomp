@@ -8,8 +8,8 @@
  ******************************************************************************/
 namespace {
 
-using namespace nw4r;
-using namespace nw4r::lyt;
+using namespace nw4hbm;
+using namespace nw4hbm::lyt;
 
 void SetTagProcessorImpl(Pane *pPane, ut::WideTagProcessor *pProcessor) {
   TextBox *pTextBox = ut::DynamicCast<TextBox *>(pPane);
@@ -23,7 +23,7 @@ void SetTagProcessorImpl(Pane *pPane, ut::WideTagProcessor *pProcessor) {
 
 } // namespace
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 MEMAllocator *Layout::mspAllocator = NULL;
@@ -339,4 +339,4 @@ Pane *Layout::BuildPaneObj(s32 kind, const void *pBinary,
 }
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm

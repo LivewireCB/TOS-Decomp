@@ -2,7 +2,7 @@
 #define NW4R_UT_RUNTIME_TYPE_INFO_H
 #include <types_nw4r.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 namespace detail {
 
@@ -56,7 +56,7 @@ inline TDerived DynamicCast(TBase *pPtr) {
 }
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 /******************************************************************************
  *
@@ -67,23 +67,23 @@ inline TDerived DynamicCast(TBase *pPtr) {
  * Declare type RTTI and accessor function.
  */
 #define NW4R_UT_RTTI_DECL(T)                                                   \
-  virtual const nw4r::ut::detail::RuntimeTypeInfo *GetRuntimeTypeInfo()        \
+  virtual const nw4hbm::ut::detail::RuntimeTypeInfo *GetRuntimeTypeInfo()      \
       const {                                                                  \
     return &typeInfo;                                                          \
   }                                                                            \
                                                                                \
-  static nw4r::ut::detail::RuntimeTypeInfo typeInfo;
+  static nw4hbm::ut::detail::RuntimeTypeInfo typeInfo;
 
 /**
  * Define type RTTI (base type).
  */
 #define NW4R_UT_RTTI_DEF_BASE(T)                                               \
-  nw4r::ut::detail::RuntimeTypeInfo T::typeInfo(NULL)
+  nw4hbm::ut::detail::RuntimeTypeInfo T::typeInfo(NULL)
 
 /**
  * Define type RTTI (derived type).
  */
 #define NW4R_UT_RTTI_DEF_DERIVED(T, BASE)                                      \
-  nw4r::ut::detail::RuntimeTypeInfo T::typeInfo(&BASE::typeInfo)
+  nw4hbm::ut::detail::RuntimeTypeInfo T::typeInfo(&BASE::typeInfo)
 
 #endif

@@ -1,6 +1,6 @@
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 void List_Init(List *pList, u16 offset) {
@@ -138,4 +138,4 @@ void *List_GetNth(const List *pList, u16 n) {
 }
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm

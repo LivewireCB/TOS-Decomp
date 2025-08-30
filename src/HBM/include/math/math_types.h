@@ -7,7 +7,7 @@
 
 #include <revolution/MTX.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace math {
 
 /******************************************************************************
@@ -559,6 +559,6 @@ inline QUAT *C_QUATSlerp(QUAT *pOut, const QUAT *p1, const QUAT *p2, f32 t) {
 }
 
 } // namespace math
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

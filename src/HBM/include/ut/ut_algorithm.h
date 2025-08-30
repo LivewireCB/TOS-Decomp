@@ -2,7 +2,7 @@
 #define NW4R_UT_ALGORITHM_H
 #include <types_nw4r.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 namespace {
 
@@ -100,6 +100,6 @@ template <typename T> inline void *RoundDown(T *pPtr, unsigned int alignment) {
 
 } // namespace
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

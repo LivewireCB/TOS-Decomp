@@ -11,7 +11,7 @@
 #define NW4R_LYT_PANE_USERDATA_LEN 8
 #define NW4R_LYT_MATERIAL_NAME_LEN 20
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 // Forward declarations
@@ -513,6 +513,6 @@ struct TexSRT {
 };
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

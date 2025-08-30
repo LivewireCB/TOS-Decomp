@@ -6,7 +6,7 @@
 
 #include <revolution/NAND.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 class NandFileStream : public FileStream {
@@ -72,6 +72,6 @@ private:
 };
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

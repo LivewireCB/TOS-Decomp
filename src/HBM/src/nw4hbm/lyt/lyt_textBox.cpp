@@ -11,8 +11,8 @@
  ******************************************************************************/
 namespace {
 
-using namespace nw4r;
-using namespace nw4r::lyt;
+using namespace nw4hbm;
+using namespace nw4hbm::lyt;
 
 inline u8 ClampColor(s16 value) {
   return value < 0 ? 0 : (value > 255 ? 255 : value);

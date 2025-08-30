@@ -12,8 +12,8 @@ static const GXColorS10 DefaultWhiteColor = {255, 255, 255, 255};
 
 namespace {
 
-using namespace nw4r;
-using namespace nw4r::lyt;
+using namespace nw4hbm;
+using namespace nw4hbm::lyt;
 
 /******************************************************************************
  * GXColorS10

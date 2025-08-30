@@ -5,7 +5,7 @@
 #include <revolution/GX.h>
 #include <revolution/TPL.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 class TexMap {
@@ -143,6 +143,6 @@ private:
 };
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

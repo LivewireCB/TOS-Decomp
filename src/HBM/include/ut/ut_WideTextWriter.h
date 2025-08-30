@@ -4,12 +4,12 @@
 
 #include <ut/ut_TextWriterBase.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 typedef TextWriterBase<wchar_t> WideTextWriter;
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

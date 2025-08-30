@@ -10,7 +10,7 @@
 #include <HBM\include\math.h>
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 // Forward declarations
@@ -250,6 +250,6 @@ private:
 NW4R_UT_LINKLIST_TYPEDEF_DECL(Pane);
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

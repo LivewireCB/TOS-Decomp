@@ -1,6 +1,6 @@
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 template <typename T> TagProcessorBase<T>::TagProcessorBase() {}
@@ -91,4 +91,4 @@ template class TagProcessorBase<char>;
 template class TagProcessorBase<wchar_t>;
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm

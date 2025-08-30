@@ -3,7 +3,7 @@
 
 #include <MSL_C/include/cstring>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 /******************************************************************************
@@ -80,4 +80,4 @@ Group *GroupContainer::FindGroupByName(const char *pName) {
 }
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm

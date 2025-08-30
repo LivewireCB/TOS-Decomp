@@ -4,7 +4,7 @@
 
 #include <math/math_types.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace math {
 
 // Forward declarations
@@ -108,6 +108,6 @@ private:
 };
 
 } // namespace math
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

@@ -2,7 +2,7 @@
 #define NW4R_UT_TAG_PROCESSOR_BASE_H
 #include <types_nw4r.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 // Forward declarations
@@ -57,6 +57,6 @@ private:
 };
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

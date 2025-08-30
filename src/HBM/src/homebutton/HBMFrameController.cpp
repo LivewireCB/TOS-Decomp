@@ -7,7 +7,7 @@ void FrameController::init(int type, f32 maxFrame, f32 minFrame, f32 delta) {
   mMaxFrame = maxFrame;
   mMinFrame = minFrame;
 
-  mDelta = delta;
+  mFrameDelta = delta;
 
   mState = ANIM_STATE_STOP;
 
@@ -23,7 +23,7 @@ void FrameController::initFrame() {
   } else {
     frame = mMinFrame;
   }
-  mFrame = frame;
+  mCurFrame = frame;
 }
 
 void FrameController::calc() {
@@ -31,24 +31,24 @@ void FrameController::calc() {
     switch (mAnmType) {
     // Animate normally; Once reaching the maximum frame, the animation stops.
     case ANIM_TYPE_FORWARD: {
-      if ((mFrame += mDelta) >= getLastFrame()) {
-        mFrame = getLastFrame();
+      if ((mCurFrame += mFrameDelta) >= getLastFrame()) {
+        mCurFrame = getLastFrame();
         mState = ANIM_STATE_STOP;
       }
       break;
     }
     // Animate in reverse; Once reaching the minimum frame, the animation stops.
     case ANIM_TYPE_BACKWARD: {
-      if ((mFrame -= mDelta) <= mMinFrame) {
-        mFrame = mMinFrame;
+      if ((mCurFrame -= mFrameDelta) <= mMinFrame) {
+        mCurFrame = mMinFrame;
         mState = ANIM_STATE_STOP;
       }
       break;
     }
     // Animate forever; Once reaching the maximum frame, the animation repeats.
     case ANIM_TYPE_LOOP: {
-      if ((mFrame += mDelta) >= mMaxFrame) {
-        mFrame -= (mMaxFrame - mMinFrame);
+      if ((mCurFrame += mFrameDelta) >= mMaxFrame) {
+        mCurFrame -= (mMaxFrame - mMinFrame);
       }
       break;
     }
@@ -57,13 +57,13 @@ void FrameController::calc() {
     // backwards. Then repeat.
     case ANIM_TYPE_ALTERNATE: {
       if (mbAlternateBack == false) {
-        if ((mFrame += mDelta) >= getLastFrame()) {
-          mFrame = getLastFrame();
+        if ((mCurFrame += mFrameDelta) >= getLastFrame()) {
+          mCurFrame = getLastFrame();
           mbAlternateBack = true;
         }
       } else {
-        if ((mFrame -= mDelta) <= mMinFrame) {
-          mFrame = mMinFrame;
+        if ((mCurFrame -= mFrameDelta) <= mMinFrame) {
+          mCurFrame = mMinFrame;
           mbAlternateBack = false;
         }
       }

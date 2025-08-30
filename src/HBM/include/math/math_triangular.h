@@ -25,7 +25,7 @@
 #define NW4R_MATH_DEG_TO_RAD(x) ((x) * (NW4R_MATH_PI / 180.0f))
 #define NW4R_MATH_RAD_TO_DEG(x) ((x) * (180.0f / NW4R_MATH_PI))
 
-namespace nw4r {
+namespace nw4hbm {
 namespace math {
 
 /******************************************************************************
@@ -99,6 +99,6 @@ inline f32 Atan2Rad(f32 y, f32 x) {
 }
 
 } // namespace math
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

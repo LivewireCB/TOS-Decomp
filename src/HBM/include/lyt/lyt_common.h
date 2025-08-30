@@ -7,7 +7,7 @@
 
 #include <revolution/GX.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 // Forward declarations
@@ -163,6 +163,6 @@ void DrawQuad(const math::VEC2 &rBase, const Size &rSize, u8 num,
 
 } // namespace detail
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

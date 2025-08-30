@@ -1,6 +1,6 @@
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 bool IsValidBinaryFile(const BinaryFileHeader *pHeader, u32 signature,
@@ -30,4 +30,4 @@ bool IsValidBinaryFile(const BinaryFileHeader *pHeader, u32 signature,
 }
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm

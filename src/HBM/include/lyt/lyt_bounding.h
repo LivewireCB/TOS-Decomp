@@ -6,7 +6,7 @@
 
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 // Forward declarations
@@ -42,6 +42,6 @@ public:
 };
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

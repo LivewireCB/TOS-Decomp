@@ -7,7 +7,7 @@
 
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 // Forward declarations
@@ -176,6 +176,6 @@ protected:
 };
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

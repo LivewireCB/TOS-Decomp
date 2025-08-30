@@ -6,7 +6,7 @@
 
 #include <revolution/OS.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 class DvdLockedFileStream : public DvdFileStream {
@@ -49,5 +49,5 @@ private:
 };
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 #endif

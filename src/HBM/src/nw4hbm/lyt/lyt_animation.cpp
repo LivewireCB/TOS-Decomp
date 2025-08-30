@@ -8,7 +8,7 @@
  * Private structures
  *
  ******************************************************************************/
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 namespace res {
 
@@ -66,7 +66,7 @@ struct HermiteKey {
 
 } // namespace res
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 /******************************************************************************
  *
@@ -75,8 +75,8 @@ struct HermiteKey {
  ******************************************************************************/
 namespace {
 
-using namespace nw4r;
-using namespace nw4r::lyt;
+using namespace nw4hbm;
+using namespace nw4hbm::lyt;
 
 inline bool RIsSame(f32 a, f32 b, f32 tolerance) {
   f32 c = a - b;
@@ -307,7 +307,7 @@ void AnimateIndTexSRT(Material *pMaterial, const res::AnimationInfo *pAnimInfo,
 
 } // namespace
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 /******************************************************************************
@@ -528,4 +528,4 @@ AnimationLink *FindAnimationLink(AnimationLinkList *pAnimList,
 
 } // namespace detail
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm

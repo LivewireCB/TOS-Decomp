@@ -14,8 +14,8 @@
  ******************************************************************************/
 namespace {
 
-using namespace nw4r;
-using namespace nw4r::lyt;
+using namespace nw4hbm;
+using namespace nw4hbm::lyt;
 
 void ReverseYAxis(math::MTX34 *pMtx) {
   pMtx->m[0][1] = -pMtx->m[0][1];
@@ -25,7 +25,7 @@ void ReverseYAxis(math::MTX34 *pMtx) {
 
 } // namespace
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 NW4R_UT_RTTI_DEF_BASE(Pane);
@@ -462,4 +462,4 @@ math::VEC2 Pane::GetVtxPos() const {
 Material *Pane::GetMaterial() const { return mpMaterial; }
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm

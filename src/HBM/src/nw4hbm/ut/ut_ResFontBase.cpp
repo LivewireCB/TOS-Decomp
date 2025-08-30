@@ -1,6 +1,6 @@
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 namespace detail {
 
@@ -194,4 +194,4 @@ void ResFontBase::GetGlyphFromIndex(Glyph *pGlyph, u16 index) const {
 
 } // namespace detail
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm

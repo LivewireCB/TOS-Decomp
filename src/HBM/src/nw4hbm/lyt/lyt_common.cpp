@@ -6,7 +6,7 @@
 
 #include <MSL_C/include/cstring>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 namespace detail {
 
@@ -220,4 +220,4 @@ void DrawQuad(const math::VEC2 &rBase, const Size &rSize, u8 num,
 
 } // namespace detail
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm

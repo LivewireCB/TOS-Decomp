@@ -4,7 +4,7 @@
 
 #include <ut/ut_IOStream.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 class FileStream : public IOStream {
@@ -51,6 +51,6 @@ protected:
 };
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

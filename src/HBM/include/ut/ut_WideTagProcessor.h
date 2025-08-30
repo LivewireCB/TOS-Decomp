@@ -4,12 +4,12 @@
 
 #include <ut/ut_TagProcessorBase.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 typedef TagProcessorBase<wchar_t> WideTagProcessor;
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

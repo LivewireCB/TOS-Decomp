@@ -1,6 +1,6 @@
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 namespace detail {
 
@@ -65,4 +65,4 @@ LinkListImpl::Iterator LinkListImpl::Erase(Iterator begin, Iterator end) {
 
 } // namespace detail
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm

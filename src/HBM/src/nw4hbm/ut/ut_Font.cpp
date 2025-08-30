@@ -1,6 +1,6 @@
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 void Font::InitReaderFunc(FontEncoding encode) {
@@ -29,4 +29,4 @@ void Font::InitReaderFunc(FontEncoding encode) {
 }
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm

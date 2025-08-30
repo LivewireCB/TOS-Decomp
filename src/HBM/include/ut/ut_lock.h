@@ -6,7 +6,7 @@
 
 #include <revolution/OS.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 namespace detail {
 
@@ -49,6 +49,6 @@ private:
 };
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

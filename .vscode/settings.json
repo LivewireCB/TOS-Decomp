@@ -201,7 +201,8 @@
     "ansi_fp.h": "c",
     "stdlib.h": "c",
     "mbstring.h": "c",
-    "FILE_POS.C": "cpp"
+    "FILE_POS.C": "cpp",
+    "__ppc_eabi_init.h": "c"
   },
   // Disable C/C++ IntelliSense, use clangd instead
   "C_Cpp.intelliSenseEngine": "default",

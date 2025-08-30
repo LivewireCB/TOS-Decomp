@@ -5,7 +5,7 @@
 #include <HBM\include\math.h>
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 class DrawInfo {
@@ -66,6 +66,6 @@ protected:
 };
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

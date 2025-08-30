@@ -8,7 +8,7 @@
 
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 // Forward declarations
@@ -263,6 +263,6 @@ enum AnimTargetTexPat {
 };
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

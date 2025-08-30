@@ -4,7 +4,7 @@
 
 #include <ut/ut_Font.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 enum FontMapMethod {
@@ -123,6 +123,6 @@ private:
 
 } // namespace detail
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

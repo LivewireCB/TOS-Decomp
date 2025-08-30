@@ -8,7 +8,7 @@
 
 #include <revolution/ARC.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 /******************************************************************************
@@ -70,6 +70,6 @@ protected:
 };
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

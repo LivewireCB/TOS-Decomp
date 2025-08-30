@@ -4,6 +4,10 @@
 #include <types.h>
 
 namespace homebutton {
+enum eState {
+  eState_Stopped,
+  eState_Playing,
+};
 enum {
   ANIM_TYPE_FORWARD = 0,
   ANIM_TYPE_BACKWARD,
@@ -35,11 +39,11 @@ public:
   void setMinFrame(f32 value) { mMinFrame = value; }
   f32 getMinFrame() const { return mMinFrame; }
 
-  void setCurrentFrame(f32 value) { mFrame = value; }
-  f32 getCurrentFrame() const { return mFrame; }
+  void setCurrentFrame(f32 value) { mCurFrame = value; }
+  f32 getCurrentFrame() const { return mCurFrame; }
 
-  void setDelta(f32 value) { mDelta = value; }
-  f32 getDelta() const { return mDelta; }
+  void setDelta(f32 value) { mFrameDelta = value; }
+  f32 getDelta() const { return mFrameDelta; }
 
   void setState(int value) { mState = value; }
   int getState() const { return mState; }
@@ -49,17 +53,17 @@ public:
 
   bool isPlaying() const { return mState == ANIM_STATE_PLAY; }
 
-protected:
-  f32 mMaxFrame; // 0x04
-  f32 mMinFrame; // 0x08
-  f32 mFrame;    // 0x0C
-
-  f32 mDelta; // 0x10
-
-  int mState; // 0x14
-
-  int mAnmType; // 0x18
-
+protected:         // GroupAnmController::doCalc
+  /* vtable */     // size 0x04, offset 0x00
+  f32 mMaxFrame;   // size 0x04, offset 0x04
+  f32 mMinFrame;   // size 0x04, offset 0x08
+  f32 mCurFrame;   // size 0x04, offset 0x0c
+  f32 mFrameDelta; // size 0x04, offset 0x10
+  int mState;      // size 0x04, offset 0x14
+  int mAnmType;    // size 0x04, offset 0x18
+  bool mAltFlag;   // size 0x01, offset 0x1c
+  /* 3 bytes padding */
+  // size 0x20
 private:
   bool mbAlternateBack; // 0x1C
 };

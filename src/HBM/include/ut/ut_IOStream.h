@@ -4,7 +4,7 @@
 
 #include <ut/ut_RuntimeTypeInfo.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 class IOStream {
@@ -48,6 +48,6 @@ protected:
 };
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

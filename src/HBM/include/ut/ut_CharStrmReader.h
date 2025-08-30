@@ -2,7 +2,7 @@
 #define NW4R_UT_CHAR_STRM_READER_H
 #include <types_nw4r.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 class CharStrmReader {
@@ -41,6 +41,6 @@ private:
 };
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

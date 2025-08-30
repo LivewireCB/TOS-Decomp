@@ -3,7 +3,7 @@
 
 #include <MSL_C/include/cstring>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 DrawInfo::DrawInfo() : mLocationAdjustScale(1.0f, 1.0f), mGlobalAlpha(1.0f) {
@@ -14,4 +14,4 @@ DrawInfo::DrawInfo() : mLocationAdjustScale(1.0f, 1.0f), mGlobalAlpha(1.0f) {
 DrawInfo::~DrawInfo() {}
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm

@@ -7,8 +7,8 @@
  ******************************************************************************/
 namespace {
 
-using namespace nw4r;
-using namespace nw4r::lyt;
+using namespace nw4hbm;
+using namespace nw4hbm::lyt;
 
 /******************************************************************************
  * TextureFlipType

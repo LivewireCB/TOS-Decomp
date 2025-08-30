@@ -4,7 +4,7 @@
 
 #include <revolution/OS.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 namespace LC {
 
@@ -30,6 +30,6 @@ inline void QueueWaitEx(u32 len) {
 
 } // namespace LC
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

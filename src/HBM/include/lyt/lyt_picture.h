@@ -5,7 +5,7 @@
 #include <lyt/lyt_common.h>
 #include <lyt/lyt_pane.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 // Forward declarations
@@ -67,6 +67,6 @@ private:
 };
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

@@ -4,7 +4,7 @@
 
 #include <HBM\include\math.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 struct Rect {
@@ -44,6 +44,6 @@ struct Rect {
 };
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

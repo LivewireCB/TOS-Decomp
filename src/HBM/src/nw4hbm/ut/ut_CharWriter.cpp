@@ -3,7 +3,7 @@
 namespace {
 
 void SetupGXCommon() {
-  static const nw4r::ut::Color fog = 0;
+  static const nw4hbm::ut::Color fog = 0;
 
   GXSetFog(GX_FOG_NONE, fog, 0.0f, 0.0f, 0.0f, 0.0f);
   GXSetTevSwapModeTable(GX_TEV_SWAP0, GX_CH_RED, GX_CH_GREEN, GX_CH_BLUE,
@@ -25,7 +25,7 @@ void SetupGXCommon() {
 
 } // namespace
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 CharWriter::LoadingTexture CharWriter::mLoadingTexture;
@@ -280,4 +280,4 @@ void CharWriter::SetupGXForI() {
 void CharWriter::SetupGXForRGBA() { SetupGXDefault(); }
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm

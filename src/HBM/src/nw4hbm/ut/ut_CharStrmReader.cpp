@@ -1,6 +1,6 @@
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 namespace {
 
@@ -55,4 +55,4 @@ u16 CharStrmReader::ReadNextCharSJIS() {
 }
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm

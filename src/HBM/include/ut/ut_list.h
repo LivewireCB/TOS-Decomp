@@ -2,7 +2,7 @@
 #define NW4R_UT_LINKLIST_H
 #include <types_nw4r.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace ut {
 
 struct List {
@@ -64,7 +64,7 @@ inline u16 List_GetSize(const List *pList) { return pList->numObjects; }
 /**
  * Declares a member Link.
  */
-#define NW4R_UT_LIST_LINK_DECL() nw4r::ut::Link link
+#define NW4R_UT_LIST_LINK_DECL() nw4hbm::ut::Link link
 
 /**
  * Initializes a List object for use with the specified type.
@@ -73,7 +73,7 @@ inline u16 List_GetSize(const List *pList) { return pList->numObjects; }
  * @param T List element type
  */
 #define NW4R_UT_LIST_INIT(LIST, T)                                             \
-  nw4r::ut::List_Init(&(LIST), offsetof(T, link))
+  nw4hbm::ut::List_Init(&(LIST), offsetof(T, link))
 
 /**
  * Gets the underlying Link within the specified object.
@@ -82,7 +82,7 @@ inline u16 List_GetSize(const List *pList) { return pList->numObjects; }
  * @param OBJ Pointer to list object
  */
 #define NW4R_UT_LIST_GET_LINK(LIST, OBJ)                                       \
-  reinterpret_cast<nw4r::ut::Link *>((u8 *)(OBJ) + (LIST).offset)
+  reinterpret_cast<nw4hbm::ut::Link *>((u8 *)(OBJ) + (LIST).offset)
 
 /**
  * List for-each macro.
@@ -97,7 +97,7 @@ inline u16 List_GetSize(const List *pList) { return pList->numObjects; }
     TYPE *NAME = NULL;                                                         \
                                                                                \
     while ((NAME = static_cast<TYPE *>(                                        \
-                nw4r::ut::List_GetNext(&(LIST), NAME))) != NULL) {             \
+                nw4hbm::ut::List_GetNext(&(LIST), NAME))) != NULL) {           \
                                                                                \
       __VA_ARGS__;                                                             \
     }                                                                          \
@@ -115,7 +115,7 @@ inline u16 List_GetSize(const List *pList) { return pList->numObjects; }
     TYPE *NAME = NULL;                                                         \
                                                                                \
     while ((NAME = static_cast<TYPE *>(                                        \
-                nw4r::ut::List_GetPrev(&(LIST), NAME))) != NULL) {             \
+                nw4hbm::ut::List_GetPrev(&(LIST), NAME))) != NULL) {           \
                                                                                \
       __VA_ARGS__;                                                             \
     }                                                                          \
@@ -134,16 +134,16 @@ inline u16 List_GetSize(const List *pList) { return pList->numObjects; }
     TYPE *NAME;                                                                \
     TYPE *__next__;                                                            \
                                                                                \
-    for (NAME = static_cast<TYPE *>(nw4r::ut::List_GetFirst(&(LIST)));         \
+    for (NAME = static_cast<TYPE *>(nw4hbm::ut::List_GetFirst(&(LIST)));       \
          NAME != NULL; NAME = __next__) {                                      \
                                                                                \
-      __next__ = static_cast<TYPE *>(nw4r::ut::List_GetNext(&(LIST), NAME));   \
+      __next__ = static_cast<TYPE *>(nw4hbm::ut::List_GetNext(&(LIST), NAME)); \
                                                                                \
       __VA_ARGS__;                                                             \
     }                                                                          \
   }
 
 } // namespace ut
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

@@ -8,7 +8,7 @@
 
 #include <MSL_C/include/cmath>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace math {
 
 /******************************************************************************
@@ -133,6 +133,6 @@ inline f32 FGetMantPart(f32 x) {
 }
 
 } // namespace math
-} // namespace nw4r
+} // namespace nw4hbm
 
 #endif

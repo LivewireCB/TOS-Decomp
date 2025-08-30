@@ -4,6 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/include",
+                "${workspaceFolder}/src/SB/GM",
+                "${workspaceFolder}/src/SB/NG",
+                "${workspaceFolder}/src/SB/include",
                 "${workspaceFolder}/include/bink",
                 "${workspaceFolder}/src/PowerPC_EABI_Support/include",
                 "${workspaceFolder}/src/PowerPC_EABI_Support/include/PowerPC_EABI_Support/MSL_C/MSL_Common",

@@ -1,7 +1,7 @@
 #include <lyt.h>
 #include <ut.h>
 
-namespace nw4r {
+namespace nw4hbm {
 namespace lyt {
 
 NW4R_UT_RTTI_DEF_DERIVED(Picture, Pane);
@@ -114,4 +114,4 @@ void Picture::DrawSelf(const DrawInfo &rInfo) {
 }
 
 } // namespace lyt
-} // namespace nw4r
+} // namespace nw4hbm
